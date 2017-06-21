@@ -1,0 +1,234 @@
+$primaryColour: #03dfe2;
+$primaryColourDarker: #05bdbf;
+@import "partials/setup";
+
+
+
+
+
+body {
+	background:white;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 10px;
+}
+
+h1, h2, h3, h4 {
+	text-transform: uppercase;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	font-weight: 400;
+	position: relative;
+	display:inline-block;
+	div:first-child {
+		font-size: 2rem;
+		position: absolute;
+		top: 95px;
+		left: 57%;
+		transform: translate(-50%,-50%);
+	}
+	div:nth-child(2){
+		font-size: 15rem;
+		line-height: 13rem;
+		color: $primaryColour;
+	}
+	div:nth-child(3) {
+		font-size: calc(45px + (80 - 45) * ((100vw - 320px) / (1920 - 320)));
+	}
+}
+
+@media (max-width: 1200px) {
+	h1 {
+		div:first-child {
+			left: 58%;
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	h1 {
+		div:first-child {
+			left: 60%;
+		}
+	}
+}
+
+@media (max-width: 520px) {
+	h1 {
+		div:first-child {
+			left: 61.5%;
+		}
+	}
+}
+
+label {
+	display: none;
+}
+
+input,
+textarea,
+select {
+	outline: none;
+}
+
+.wrapper {
+	margin:0 auto;
+	max-width:800px;
+}
+
+header, footer {
+	background: linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+	width: 100vw;
+}
+
+header {
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+form {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	font-size: 1.1rem;
+	input[type=text],input[type=submit] {
+		padding:14px 17px;
+		border: 0 solid black;
+	}
+	input[type=submit] {
+		margin-left: -5px;
+		background-color: $primaryColour;
+		&:hover {
+			background: $primaryColourDarker;
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	form {
+		left: 50%;
+		transform: translate(-50%);
+		input[type=submit] {
+			background-color: orange;
+		}
+	}
+}
+
+#weather {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	display: flex;
+	align-items: center;
+	background: rgba(123, 206, 255, 0.5);
+	border-radius: 10px 0 0 0;
+	font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+	padding:0 20px;
+	& > p {
+		padding: 0 10px;
+	}
+}
+
+#restaurantList {
+	.restaurantName {
+		display: inline-block;
+		margin: 200px 15px 5px 0;
+		font-size: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320)));
+		&::before {
+			border: 2px solid $primaryColour;
+			width: 20px;
+			height: 200px;
+		}
+	}
+
+	.cuisines, .rating {
+		font-weight: 100;
+	}
+
+	.cuisines {
+		font-size: 1.3rem;
+	}
+
+	.rating {
+		font-size: 1.5rem;
+		margin: 80px 0 20px 0;
+
+	}
+
+	.address {
+		font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+		margin-bottom: 10px;
+	}
+
+	.zomatoLink {
+		width: 40px;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+
+	.restaurantImg {
+		width: 50%;
+		filter: contrast(170%) saturate(110%) opacity(70%);
+		display: block;
+		float: right;
+	}
+
+	.mapButton {
+		background-color: $primaryColour;
+		color:black;
+		font-size: 1.5rem;
+		padding: 10px 15px;
+		text-decoration: none;
+		margin-bottom:10px;
+		transition: all 0.3s;
+		display: block;
+		width: 250px;
+		&:hover {
+			width: 350px;
+		}
+	}
+
+}
+
+@media (max-width: 770px) {
+	.wrapper {
+		margin: 0 5%;
+	}
+	#restaurantList { 
+		.cuisines {
+			margin-bottom: 40px;
+		}
+		.restaurantImg {
+			width: 100%;
+			float: none;
+		}
+		.rating {
+			margin-top: 10px;
+		}
+		.address {
+			margin-top: 40px;
+		}
+	}
+}
+
+footer {
+	margin-top: 200px;
+	color: white;
+	font-size: 1.3rem;
+	p {
+		margin: 0;
+		padding: 30px 2% 100px 2%;
+	}
+}
+
+
+
+

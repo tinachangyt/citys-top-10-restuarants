@@ -1,0 +1,327 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: white;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 10px; }
+
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  margin: 0; }
+
+h1 {
+  color: white;
+  font-weight: 400;
+  position: relative;
+  display: inline-block; }
+  h1 div:first-child {
+    font-size: 2rem;
+    position: absolute;
+    top: 95px;
+    left: 57%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  h1 div:nth-child(2) {
+    font-size: 15rem;
+    line-height: 13rem;
+    color: #03dfe2; }
+  h1 div:nth-child(3) {
+    font-size: calc(45px + (80 - 45) * ((100vw - 320px) / (1920 - 320))); }
+
+@media (max-width: 1200px) {
+  h1 div:first-child {
+    left: 58%; } }
+
+@media (max-width: 800px) {
+  h1 div:first-child {
+    left: 60%; } }
+
+@media (max-width: 520px) {
+  h1 div:first-child {
+    left: 61.5%; } }
+
+label {
+  display: none; }
+
+input,
+textarea,
+select {
+  outline: none; }
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 800px; }
+
+header, footer {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 35, 51, 0.5)), color-stop(100%), color-stop(0%, transparent)), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+  background: -webkit-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+  background: -o-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+  background: linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+  width: 100vw; }
+
+header {
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+form {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  font-size: 1.1rem; }
+  form input[type=text], form input[type=submit] {
+    padding: 14px 17px;
+    border: 0 solid black; }
+  form input[type=submit] {
+    margin-left: -5px;
+    background-color: #03dfe2; }
+    form input[type=submit]:hover {
+      background: #05bdbf; }
+
+@media (max-width: 390px) {
+  form {
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%); }
+    form input[type=submit] {
+      background-color: orange; } }
+
+#weather {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(123, 206, 255, 0.5);
+  border-radius: 10px 0 0 0;
+  font-size: calc(15px + (20 - 15) * ((100vw - 320px) / (1920 - 320)));
+  padding: 0 20px; }
+  #weather > p {
+    padding: 0 10px; }
+
+#restaurantList .restaurantName {
+  display: inline-block;
+  margin: 200px 15px 5px 0;
+  font-size: calc(45px + (60 - 45) * ((100vw - 320px) / (1920 - 320))); }
+  #restaurantList .restaurantName::before {
+    border: 2px solid #03dfe2;
+    width: 20px;
+    height: 200px; }
+
+#restaurantList .cuisines, #restaurantList .rating {
+  font-weight: 100; }
+
+#restaurantList .cuisines {
+  font-size: 1.3rem; }
+
+#restaurantList .rating {
+  font-size: 1.5rem;
+  margin: 80px 0 20px 0; }
+
+#restaurantList .address {
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+  margin-bottom: 10px; }
+
+#restaurantList .zomatoLink {
+  width: 40px; }
+  #restaurantList .zomatoLink:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+#restaurantList .restaurantImg {
+  width: 50%;
+  -webkit-filter: contrast(170%) saturate(110%) opacity(70%);
+  filter: contrast(170%) saturate(110%) opacity(70%);
+  display: block;
+  float: right; }
+
+#restaurantList .mapButton {
+  background-color: #03dfe2;
+  color: black;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+  width: 250px; }
+  #restaurantList .mapButton:hover {
+    width: 350px; }
+
+@media (max-width: 770px) {
+  .wrapper {
+    margin: 0 5%; }
+  #restaurantList .cuisines {
+    margin-bottom: 40px; }
+  #restaurantList .restaurantImg {
+    width: 100%;
+    float: none; }
+  #restaurantList .rating {
+    margin-top: 10px; }
+  #restaurantList .address {
+    margin-top: 40px; } }
+
+footer {
+  margin-top: 200px;
+  color: white;
+  font-size: 1.3rem; }
+  footer p {
+    margin: 0;
+    padding: 30px 2% 100px 2%; }

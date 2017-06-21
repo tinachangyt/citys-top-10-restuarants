@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>City's Top 10 Restaurants</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/styles.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600" rel="stylesheet">
+</head>
+<body>
+<!-- HEADER HEADER HEADER -->
+	<header>
+		<h1>
+			<div>top</div>
+			<div>10</div> 
+			<div> restaurants</div>
+		</h1>
+		<form>
+			<label for="city">city</label>
+			<input type="text" name="city" id="city" placeholder="enter a city" required>
+			<input type="submit" name="city" value="search" href="#restaurantList">
+		</form>
+		<div id="weather"></div>
+	</header>
+
+
+<!-- RESTAURANT LIST RESTAURANT LIST -->
+	<section id="restaurantList">
+		<div class="wrapper">
+			<div id="restaurants">
+				<div class="rest-result0"></div>
+				<div class="rest-result1"></div>
+			</div>
+		</div>
+	</section>
+
+
+<!-- FOOTER FOOOTER FOOTER -->
+	<footer>
+		<p>Copyright © 2017 Designed and Coded by Tina Chang</p>
+	</footer>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
