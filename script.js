@@ -84,7 +84,7 @@ foodApp.displayFoodPieces = function(foodData) {
 
 foodApp.getWeatherPieces = function() {
 	$.ajax({
-		url:`http://api.wunderground.com/api/${foodApp.weatherKey}/conditions/q/autoip.json`,
+		url:`https://api.wunderground.com/api/${foodApp.weatherKey}/conditions/q/autoip.json`,
 		method:"GET",
 		dataType:"jsonp"
 	})
