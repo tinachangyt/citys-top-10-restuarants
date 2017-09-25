@@ -19,7 +19,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	color: white;
-	font-weight: 400;
+	font-weight: 300;
 	position: relative;
 	display:inline-block;
 	div:first-child {
@@ -148,18 +148,15 @@ form {
 		}
 	}
 
-	.cuisines, .rating {
-		font-weight: 100;
-	}
-
 	.cuisines {
 		font-size: 1.3rem;
+		font-weight: 100;
 	}
 
 	.rating {
 		font-size: 1.5rem;
 		margin: 80px 0 20px 0;
-
+		font-weight: 300;
 	}
 
 	.address {
@@ -168,9 +165,10 @@ form {
 	}
 
 	.zomatoLink {
-		width: 40px;
+		width: 35px;
+		transition: all 0.1s;
 		&:hover{
-			transform: scale(1.1);
+			transform: scale(1.07);
 		}
 	}
 

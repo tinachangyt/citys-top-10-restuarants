@@ -70,7 +70,7 @@ foodApp.displayFoodPieces = function(foodData) {
 	foodData.best_rated_restaurant.forEach(function(object) {
 		const nameEl = $('<h2 class="restaurantName">').text(object.restaurant.name);
 		const cuisinesEl = $('<h4 class="cuisines">').text(object.restaurant.cuisines);
-		const linkEl = $('<a><img class="zomatoLink" src="images/zomato-icon.png"></a>').attr("href", object.restaurant.url);
+		const linkEl = $('<a><img class="zomatoLink" src="images/zomato-icon.png" title="Go to Zomato for more details"></a>').attr("href", object.restaurant.url);
 		const popularityEl = $('<p class="rating">').text("❤ " + object.restaurant.user_rating.aggregate_rating + " / 5");
 		const addressEl = $('<h3 class="address">').text(object.restaurant.location.address);
 		const mapEl = $('<a class="mapButton">Map</a>').attr("href", `https://www.google.ca/maps/dir//${object.restaurant.location.address}`).attr("target", "_blank");

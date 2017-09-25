@@ -144,7 +144,7 @@ h1, h2, h3, h4 {
 
 h1 {
   color: white;
-  font-weight: 400;
+  font-weight: 300;
   position: relative;
   display: inline-block; }
   h1 div:first-child {
@@ -262,26 +262,28 @@ form {
     width: 20px;
     height: 200px; }
 
-#restaurantList .cuisines, #restaurantList .rating {
-  font-weight: 100; }
-
 #restaurantList .cuisines {
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  font-weight: 100; }
 
 #restaurantList .rating {
   font-size: 1.5rem;
-  margin: 80px 0 20px 0; }
+  margin: 80px 0 20px 0;
+  font-weight: 300; }
 
 #restaurantList .address {
   font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
   margin-bottom: 10px; }
 
 #restaurantList .zomatoLink {
-  width: 40px; }
+  width: 35px;
+  -webkit-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s; }
   #restaurantList .zomatoLink:hover {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1); }
+    -webkit-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    transform: scale(1.07); }
 
 #restaurantList .restaurantImg {
   width: 50%;
