@@ -193,10 +193,10 @@ select {
   max-width: 800px; }
 
 header, footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 35, 51, 0.5)), color-stop(100%), color-stop(0%, transparent)), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
-  background: -webkit-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
-  background: -o-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
-  background: linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/semenov-ivan-191829.jpg) no-repeat fixed center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 35, 51, 0.5)), color-stop(100%), color-stop(0%, transparent)), url(../images/background.jpg) no-repeat fixed center;
+  background: -webkit-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/background.jpg) no-repeat fixed center;
+  background: -o-linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/background.jpg) no-repeat fixed center;
+  background: linear-gradient(rgba(28, 35, 51, 0.5), 100%, transparent 0%), url(../images/background.jpg) no-repeat fixed center;
   width: 100vw; }
 
 header {
